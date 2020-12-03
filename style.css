@@ -1,0 +1,21 @@
+.post_it {
+	padding: 25px;
+	-webkit-box-shadow: 0 8px 10px -7px #999;
+	-moz-box-shadow: 0 8px 10px -7px #999;
+	box-shadow: 0 8px 10px -7px #999;
+	-webkit-border-bottom-right-radius: 60px 10px;
+	-moz-border-radius-bottomright: 60px 10px;
+	border-bottom-right-radius: 60px 10px;
+	margin: 20px auto;
+	background: #fefabc;
+	max-width: 300px;
+}
+
+.post_it h2 {
+	border-top: 1.2px dotted grey;
+	margin: 0 -25px;
+	padding: 15px 25px 0 25px;
+	text-align: center;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
