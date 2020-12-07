@@ -1,10 +1,20 @@
-.map {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+
+body {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.grid {
 	display: flex;
-	justify-content: center;
 	flex-wrap: wrap;
 }
 
-.post_it {
+.post_it, .yellow, .green, .red {
 	padding: 25px 15px;
 	-webkit-box-shadow: 0 8px 10px -7px #999;
 	-moz-box-shadow: 0 8px 10px -7px #999;
@@ -12,32 +22,57 @@
 	-webkit-border-bottom-right-radius: 60px 10px;
 	-moz-border-radius-bottom-right: 60px 10px;
 	border-bottom-right-radius: 60px 10px;
-	margin: 20px;
-	max-width: 250px;
+	margin: 10px 5px;
+	width: 200px;
 }
 
-.post_it ul {
-	padding-left: 15px;
+.concepts .post_it {
+	background-color: rgb(253, 222, 165);
 }
 
-.post_it:nth-child(1n+0) {
+.column > div:not(.concepts):first-child {
+	background-color: #B9EAF6;
+}
+
+.column > div:not(.concepts):first-child, .concepts > div:first-child {
+	height: 240px;
+}
+
+.column_1 .post_it, .yellow, .green, .red {
+	height: 150px;
+}
+
+.yellow {
 	background: #fefabc;
 }
 
-.post_it:nth-child(2n+0) {
-	background: #B9EAF6;
+.green {
+	background: #78ddb7;
 }
 
-.post_it:nth-child(3n+0) {
-	background: #FDD7DB;
+.red {
+	background-color: rgb(241, 113, 113);
 }
 
-.post_it h2 {
-    font-size: 20px;
+.post_it p:first-child {
 	border-top: 1.2px dotted grey;
-	margin: 0 -10px;
 	padding: 15px 25px 0 25px;
+	margin-top: 0;
+}
+
+.post_it {
 	text-align: center;
-	letter-spacing: 1px;
+}
+
+.post_it p {
+	font-size: 16px;
 	text-transform: uppercase;
+}
+
+.post_it .from {
+	font-weight: 500;
+}
+
+.post_it .to, .concepts .post_it {
+	font-weight: 900;
 }
